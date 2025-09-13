@@ -4,16 +4,18 @@
 
 int main(){
 
-    int num;
+    int num = 0;
     int sum = 0;
 
-    for(num = 0; num < 1000; num++){
+    num = 0;
+    while(num < 1000){
         if(num % 3 == 0 || num % 5 == 0){
             sum += num;
         }
+        num ++;
     }
-
-    printf("Sum: %d", sum);
+ 
+    printf("Sum: %d\n", sum);
 
     return 0;
 }
